@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  web:
+    container_name: "api"
+    build: 
+      context: .
+    volumes:
+      - ./:/app
+    ports: 
+      - "3000:3000"
